@@ -19,7 +19,7 @@ const FeesModal = ({ isOpen, onClose, universityId }) => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`${API_BASE_URL}/fees/${universityId}`);
+      const response = await axios.get(`${API_BASE_URL}/api/fees/${universityId}`);
       setFees(response.data);
     } catch (err) {
       console.error('Error fetching fees:', err);
