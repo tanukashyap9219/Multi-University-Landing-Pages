@@ -18,7 +18,7 @@ const LandingPage1 = () => {
 
   const fetchUniversityData = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/university/amity`);
+      const response = await axios.get(`${API_BASE_URL}/api/university/amity`);
       setUniversityData(response.data);
     } catch (error) {
       console.error('Error fetching university data:', error);
